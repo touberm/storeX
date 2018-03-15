@@ -1,0 +1,59 @@
+/* reset */
+
+/* END reset*/
+/* layout */
+body{
+  font-family: "microsoft yahei";
+  font-size:20px;
+}
+
+/* END layout */
+
+/* personal */
+#personal .header{
+  background:url(../images/personal/header.png) no-repeat center;
+  background-size: auto 100%;
+  padding-top:35px;
+}
+#personal .header .portrait{
+  display: block;
+  width:100px;
+  border-radius: 50%;
+  border:1px solid #fff;
+  margin:0 auto 15px;
+  overflow: hidden;
+}
+#personal .header .name{
+  font-size:1.5rem;
+  line-height: 1.5rem;
+  color:#604c47;
+}
+#personal .header .level{
+  height:1.5rem;
+  vertical-align: top;
+}
+
+progress
+{
+   color:orange; /*兼容IE10的已完成进度背景*/
+   border:none;
+   height:4px;
+   width:250px;
+   background:#d7d7d7;/*这个属性也可当作Chrome的已完成进度背景，只不过被下面的::progress-bar覆盖了*/      
+   
+}
+
+progress::-webkit-progress-bar
+
+{
+   background:#d7d7d7;
+}
+
+progress::-webkit-progress-value,
+progress::-moz-progress-bar
+{
+     background:orange;
+}
+
+
+/* END personal */
