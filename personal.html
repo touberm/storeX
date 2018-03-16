@@ -10,24 +10,115 @@
   </head>
 
   <body id='personal'>
+    
     <div class="mui-content">
       <div class="header mui-text-center">
-        <img src="images/personal/portrait.png"  alt="个人头像" class='portrait' />
-        <span class='name'>国宝</span>
-        <img src="images/personal/level.png" alt="level" class='level'/>
-        <div>
-          <progress value="22" max="100"></progress>
+        <img src="images/personal/portrait.png" alt="个人头像" class='portrait' />
+        <div class="name-group">
+          <span class='name'>国宝</span>
+          <img src="images/personal/level.png" alt="level" class='level' />
         </div>
-        <br />
-      <br /><br /><br />
+
+        <div class='progress-group'>
+          <p class='mui-clearfix'><span class='mui-pull-left'>等级：</span><span class='mui-pull-right'>成长值：300/500</span></p>
+          <div class="base">
+            <div class="line"></div>
+          </div>
+
+        </div>
+        <button class='promote'>去提升<small>▶</small></button>
+      </div>
+      <div class="main">
+        <div class="indent">
+          <div class="title mui-clearfix">
+            <span class="myIndent mui-pull-left">我的订单</span>
+            <a href="javascript:void(0);" class='mui-pull-right more'>查看更多订单&nbsp;&gt;</a>
+          </div>
+          <div class="options mui-clearfix">
+
+            <!--1-->
+            <a class="unit mui-pull-left mui-block mui-text-center">
+              <div class="img">
+                <img src="images/personal/indent1.png" alt="" class="mui-block" />
+                <span class='mui-badge mui-badge-danger badge mui-hidden'>3</span>
+              </div>
+
+              <p>待付款</p>
+            </a>
+            <!--2-->
+            <a class="unit mui-pull-left mui-block mui-text-center">
+              <div class="img">
+                <img src="images/personal/indent2.png" alt="" class="mui-block" />
+                <span class='mui-badge mui-badge-danger badge mui-hidden'>3</span>
+              </div>
+
+              <p>待收货</p>
+            </a>
+            <!--3-->
+            <a class="unit mui-pull-left mui-block mui-text-center">
+              <div class="img">
+                <img src="images/personal/indent3.png" alt="" class="mui-block" />
+                <span class='mui-badge mui-badge-danger badge'>6</span>
+              </div>
+
+              <p>待认购</p>
+            </a>
+            <!--4-->
+            <a class="unit mui-pull-left mui-block mui-text-center">
+              <div class="img">
+                <img src="images/personal/indent4.png" alt="" class="mui-block" />
+                <span class='mui-badge mui-badge-danger badge mui-hidden'>3</span>
+              </div>
+
+              <p>已认购</p>
+            </a>
+            <!--5-->
+            <a class="unit mui-pull-left mui-block mui-text-center">
+              <div class="img">
+                <img src="images/personal/indent5.png" alt="" class="mui-block" />
+                <span class='mui-badge mui-badge-danger badge mui-hidden'>3</span>
+              </div>
+
+              <p>我的订单</p>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <ul class="mui-table-view list">
+        <li class="mui-table-view-cell">
+          <a class='mui-block'>
+            <img src="images/personal/list1.png" alt="" />
+            <div class="name">最新文章<span class='red-dot'></span></div>
+          </a>
+        </li>
+        <li class="mui-table-view-cell">
+          <a class='mui-block'>
+            <img src="images/personal/list2.png" alt="" />
+            我的账户
+          </a>
+        </li>
+        <li class="mui-table-view-cell">
+          <a class='mui-block'>
+            <img src="images/personal/list3.png" alt="" />
+            我的二维码
+          </a>
+        </li>
+        <li class="mui-table-view-cell">
+          <a class='mui-block'>
+            <img src="images/personal/list4.png" alt="" />
+            管理中心
+          </a>
+        </li>
+        <li class="mui-table-view-cell">
+          <a class='mui-block'>
+            <img src="images/personal/list5.png" alt="" />
+            我的优惠券
+          </a>
+        </li>
         
-      </div>
-      
-      <br />
-      <br /><br /><br />
-      <div id="demo1" class="mui-progressbar">
-        <span></span>
-      </div>
+      </ul>
 
       <nav class="mui-bar mui-bar-tab">
         <a class="mui-tab-item mui-active">
@@ -51,11 +142,9 @@
     <script src="js/mui.min.js"></script>
     <script type="text/javascript">
       mui.init();
-
-      mui("#demo1").progressbar({
-        progress: 20
-      }).show();
+    </script>
+    <script type="text/javascript">
+    	document.documentElement.style.fontSize = (window.innerWidth/1242*100).toFixed(2) + 'px';
     </script>
   </body>
 
-</html>
