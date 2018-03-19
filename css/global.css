@@ -8,6 +8,43 @@ body{
 
 /* END layout */
 
+/* common */
+.title-bar{
+  height:1rem;
+  background-color: #fff;
+  box-shadow: none;
+}
+.title-bar .titleBar-btn{
+  width:0.34rem;
+  height:0.62rem;
+  background-image: url(../images/back.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin:0.19rem 0;
+}
+
+.option-bar img{
+  width:0.62rem;
+  display: block;
+  margin:0 auto;
+}
+.option-bar span{
+  font-size:0.3rem;
+  color:#a2a2a2;
+}
+.option-bar.mui-bar-tab .mui-tab-item {
+  color: #a2a2a2;
+}
+
+.option-bar.mui-bar-tab .mui-tab-item.mui-active{
+  color:#604c47;
+}
+
+.mui-bar-nav~.mui-content{
+  padding-top:1rem;
+}
+/* END common */
+
 /* personal */
 #personal{
   background-color: #ebebeb;
@@ -17,7 +54,7 @@ body{
   background:url(../images/personal/header.png) #fff no-repeat center;
   background-size: 140% 100%;
   padding-top:0.73rem;
-  padding-bottom: 50px;
+  padding-bottom: 0.9rem;
 }
 #personal .header .portrait{
   display: block;
@@ -43,7 +80,7 @@ body{
 
 
 #personal .progress-group{
-	width:5rem;
+	width:5.02rem;
 	display: inline-block;
 	vertical-align: bottom;
 }
@@ -54,47 +91,52 @@ body{
 	display: inline-block;
 	vertical-align: bottom;
 	color:#666;
+	margin-bottom: 0.3rem;
+}
+#personal .progress-group p mark{
+  color:#604c47;
+  background:inherit;
 }
 
 
 #personal .progress-group .base{
 	position: relative;
 	width:5.02rem;
-	height:0.14rem;
-	border-radius: 0.04rem;
+	height:8px;
+	border-radius: 4px;
 	background-color: #604c47;
 }
 #personal .progress-group .base .line{
 	position: absolute;
-	top:0.01rem;
-	left:0.01rem;
+	top:1px;
+	left:1px;
 	width:3rem;
-	height:0.12px;
-	border-radius: 0.04rem;
+	height:6px;
+	border-radius: 4px;
 	background-color: #feebb5;
 }
 
 
 #personal .promote{
-	font-size: 0.7rem;
-	line-height: 0.8rem;
+	font-size: 12px;
+	line-height: 16px;
 	display: inline-block;
-	height: 1rem;
-	padding: 0 12px;
+	height: 16px;
+	padding: 0 0.2rem;
 	vertical-align: bottom;
 	border: none;
 	background-color: #c1281b;
 	color:#fff;
 	border-radius: 4px;
 	overflow: hidden;
-	margin-left: 10px;
+	margin-left: 0.23rem;
 }
 #personal .promote small{
-	font-size: 0.5rem;
+	font-size: 12px;
 }
 
 #personal .main{
-  padding:0 10px;
+  padding:0 0.4rem;
   background:#fff;
 }
 
@@ -103,67 +145,65 @@ body{
 }
 #personal .indent .title{
   border-bottom: 1px solid #e1e1e1;
-  padding-bottom: 1.2rem;
+  padding-bottom: 0.34rem;
 }
 
 #personal .indent .myIndent{
-  font-size: 1.2rem;
-  line-height: 1.2rem;
+  font-size: 0.44rem;
+  line-height: 0.74rem;
 }
 #personal .indent .more{
-  font-size: 0.8rem;
-  line-height: 1.2rem;
+  font-size: 0.34rem;
+  line-height: 0.74rem;
   color:#c0c0c0;
 }
 
 #personal .indent .options{
   width:100%;
-  padding-top:1.2rem;
-  padding-bottom: 1.2rem;
+  padding-top:0.54rem;
+  padding-bottom:0.5rem;
 }
 #personal .indent .options .unit{
   width:20%;
 }
 #personal .indent .options .unit .img{
   position: relative;
-  width:80%;
+  width:0.86rem;
   margin:0 auto;
 }
 #personal .indent .options .unit .img img{
   width:100%;
   margin:0 auto;
-  padding:8px;
 }
 #personal .indent .options .unit .img .badge{
   position: absolute;
-  right:0;
-  top:0;
+  right:-9px;
+  top:-9px;
 }
 #personal .indent .options .unit p{
   color:#323232;
-  font-size: 1rem;
-  line-height: 1.2rem;
+  font-size: 0.3rem;
+  line-height: 0.9rem;
 }
 
 #personal .list{
-  margin-top:15px;
-  margin-bottom: 100px;
+  margin-top:0.3rem;
+  margin-bottom: 1.94rem;
 }
 #personal .list li{
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  
+  font-size: 0.46rem;
+  line-height: 0.54rem;
 }
 
 #personal .list li img{
-  padding-right:10px;
-  height:1.5rem;
+  width:0.54rem;
+  height:0.54rem;
   vertical-align: middle;
 }
 #personal .list li .name{
   position: relative;
   display: inline-block;
-  padding:8px 20px 8px 0;
+  padding:0.4rem 0 0.4rem 0.2rem;
 }
 #personal .list li .name .red-dot{
   display: inline-block;
@@ -180,6 +220,160 @@ body{
 
 /* END personal */
 
+
+/* level */
+#level .main{
+  padding:0.2rem 0 0.3rem;
+  background-color: #fff;
+}
+#level .main h2{
+  padding-left:0.46rem;
+  font-size:0.68rem;
+  color:#6a3d16;
+  line-height: 0.92rem;
+}
+#level .main h2 img{
+  height:0.92rem;
+  vertical-align: middle;
+  padding-left:0.2rem;
+}
+
+#level .promote{
+  margin:0 auto;
+  width:11.75rem;
+  background-color: #fffdf5;
+  border:1px solid #faf1e1;
+  border-radius: 36px;
+  padding-bottom: 0.3rem;
+  overflow: hidden;
+}
+
+#level .promote .title{
+  padding-top:0.3rem;
+}
+#level .promote .title p{
+  font-size: 0.35rem;
+  line-height: 0.5rem;
+  color:#7d623d;
+  height:0.5rem;
+  padding-left:0.5rem;
+}
+#level .promote .title a{
+  color:#fff;
+  display: block;
+  width:0.5rem;
+  height:0.5rem;
+  background:#e4d0af;
+  line-height: 0.5rem;
+  border-radius: 50%;
+  overflow:hidden;
+  margin:0;
+  padding:0;
+  font-size: 0.35rem;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+#level .dirgram{
+  position: relative;
+  margin:0 0.3rem;
+  padding-top:0.6rem;
+  padding-bottom: 0.8rem;;
+}
+#level .dirgram .line{
+  width:100%;
+  background:#eedbba;
+  height:0.12rem;
+  top:0.8rem;
+  left:0;
+  position: absolute;
+  z-index: 1;
+}
+#level .dirgram .unit{
+  position: relative;
+  z-index: 2;
+  width:11.11%;
+  min-width:0.9rem;
+}
+#level .dirgram .unit img{
+  display: block;
+  width:0.82rem;
+  margin:0 auto;
+}
+#level .dirgram .unit span{
+  display: block;
+  font-size: 0.3rem;
+  padding-top:0.26rem;
+  text-align: center;
+}
+#level .lv1{color:#ffe2d6;}
+#level .lv2{color:#ffdcbd;}
+#level .lv3{color:#ffdda3;}
+#level .lv4{color:#ffad8a;}
+#level .lv5{color:#ff9b70;}
+#level .lv6{color:#ff773d;}
+#level .lv7{color:#ff6524;}
+#level .lv8{color:#ff540a;}
+#level .lv9{color:#ff4d00;}
+
+#level .detail{
+  background-color:#fff6e0;
+  padding:0.3rem 0.34rem 0.35rem;
+}
+#level .detail table{
+  font-size: 0.23rem;
+  text-align: center;
+  border-collapse: collapse;
+  border:1px solid #e1e1e1;
+}
+#level .detail table th{
+  color:#333;
+  line-height: 0.85rem;
+  border:1px solid #e1e1e1;
+}
+#level .detail table td{
+  color:#666;
+  line-height: 0.85rem;
+  border:1px solid #e1e1e1;
+}
+
+#level .daily{
+  border-top:0.3rem solid #ebebeb;
+}
+#level .daily h3{
+  font-size: 0.56rem;
+  line-height: 1.04rem;
+  padding-top:0.4rem;
+  text-align: center;
+  color:#6a3d16;
+}
+
+#level .mui-table-view:before{
+  height:0;
+}
+#level .daily ul{
+  border:none;
+}
+#level .daily ul .unit{
+  padding-top:0.6rem;
+  padding-left: 1.1rem;
+  border-bottom: 1px solid #ccc;
+}
+#level .daily ul h4{
+  font-size: 0.4rem;
+  line-height: 0.7rem;
+}
+#level .daily ul span{
+  font-size: 0.3rem;
+  line-height: 0.5rem;
+  color:#bc6a24;
+}
+
+
+
+
+
+/* END level */
 
 /*
    
