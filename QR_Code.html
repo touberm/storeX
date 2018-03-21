@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/global.css" />
+		<style>
+		  html{
+		    height:100%;
+		  }
+		</style>
+	</head>
+
+	<body id='qr_code'>
+	  <header class="mui-bar mui-bar-nav title-bar">
+        <a class="mui-action-back mui-pull-left titleBar-btn mui-block"></a>
+        <h1 class="mui-title">我的二维码</h1>
+    </header>
+    <div class="main">
+      <div class="box">
+        <div class="user">
+          <img src="images/personal/portrait.png"/>
+          <div class="name">
+            <p class="key">国宝</p>            
+            <p class="value">会员码:1234567890</p>
+          </div>
+        </div>
+        <img src="images/qr_code.png" alt="" class="view" />
+        <div class="btn mui-text-center">
+          <button class="save">保存图片</button>
+          <button class="share">分享</button>
+        </div>
+      </div>
+      
+    </div>
+	  
+	  
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<script type="text/javascript">
+      document.documentElement.style.fontSize = (window.innerWidth/1242*100).toFixed(2) + 'px';
+    </script>
+	</body>
+
+</html>

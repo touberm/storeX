@@ -40,6 +40,9 @@ body{
   font-size:0.3rem;
   color:#a2a2a2;
 }
+.option-bar span.on{
+  color:#a28754;
+}
 .option-bar.mui-bar-tab .mui-tab-item {
   color: #a2a2a2;
 }
@@ -59,6 +62,90 @@ body{
   height:0;
 }
 /* END common */
+/* QR_Code */
+#qr_code{
+  background-image:url(../images/QRCode_bg.jpg) ;
+  background-size: 100% 100%;
+  height:100%;
+  background-color: inherit;
+  width:100%;
+  display: table;
+  vertical-align: middle;
+}
+#qr_code .title-bar{
+  background-color: inherit;
+}
+#qr_code .title-bar .titleBar-btn{
+  background-image: url(../images/back_w.png);
+}
+#qr_code .title-bar h1{
+  color:#fff;
+}
+#qr_code .main{
+  display: table-cell;
+  vertical-align: middle;
+}
+#qr_code .main .box{
+  padding:0.5rem;
+  background-color: #fff;
+  width:10.1rem;
+  height: auto;
+  margin:0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+#qr_code .user>img{
+  width:1.96rem;
+  vertical-align: middle;
+}
+#qr_code .user .name{
+  padding-left:0.25rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+#qr_code .user .name .key{
+  font-size: 0.5rem;
+  line-height: 0.8rem;
+  color:#333;
+  padding: 0;
+  margin:0;
+}
+#qr_code .user .name .value{
+  font-size: 0.36rem;
+  line-height: 0.6rem;
+  color:#999;
+  padding: 0;
+  margin:0;
+}
+#qr_code .view{
+  display: block;
+  width:6.06rem;
+  margin:0 auto;
+  padding:1rem 0;
+}
+#qr_code .btn{
+  padding-bottom: 0.9rem;
+}
+#qr_code .save,
+#qr_code .share{
+  padding:0 0.9rem;
+  margin:0;
+  font-size: 0.46rem;
+  line-height: 0.8rem;
+  height: 0.8rem;
+  color:#fff;
+  background-image: url(../images/qr_code_btn.png);
+  background-size:100% 100%;
+  border:none;
+  border-radius: 0.4rem;
+}
+#qr_code .save{
+  margin-right: 1rem;
+}
+
+
+/* END QR_Code */
+
 
 /* account */
 #account{
@@ -75,6 +162,7 @@ body{
 }
 #account .main{
   background-color: inherit;
+  padding-bottom: 2rem;
 }
 #account .header{
   background-color: #e8bc67;
@@ -115,7 +203,6 @@ body{
 #account .options{
   background-color:#fff;
   padding:0.38rem 0 0.2rem;
-  border-bottom: 0.3rem solid #ebebeb;
 }
 #account .options .unit{
   width:20%;
@@ -130,6 +217,157 @@ body{
   margin:0;
   color:#666;
 }
+#account .consume{
+  border-top: 0.3rem solid #ebebeb;
+}
+#account .consume .unit{
+  padding:0;
+  border-bottom: 0.3rem solid #ebebeb;
+}
+#account .consume .unit .line{
+  padding:0.3rem 0.4rem;
+}
+#account .consume .top .storeName{
+  font-size: 0.4rem;
+  line-height: 0.4rem;
+  padding-left:0.6rem;
+  background:url(../images/account/icon_bag.png) no-repeat left center;
+  background-size: auto 100%;
+  height:0.4rem;
+  color:#333;
+}
+#account .consume .top .storeName span{
+  color:#d2d2d2;
+}
+#account .consume .top .stat{
+  font-size: 0.4rem;
+  line-height: 0.4rem;
+  color:#bdac8e;
+}
+#account .consume .mid{
+  background-color: #f3f3f3;
+}
+#account .consume .mid .table-row{
+  display: table-row;
+}
+#account .consume .mid .view{
+  width:3.1rem;
+  vertical-align: middle;
+}
+#account .consume .mid .view img{
+  margin:0.4rem;
+  width:2.3rem;
+  vertical-align: middle;
+}
+#account .consume .mid .trade{
+  vertical-align: middle;
+}
+#account .consume .mid .trade .name{
+  font-size: 0.4rem;
+  line-height: 0.52rem;
+  font-weight: normal;
+  color:#333;
+}
+#account .consume .mid .trade .style{
+  font-size: 0.4rem;
+  color:#ccc;
+}
+#account .consume .mid .count{
+  vertical-align: middle;
+  text-align: right;
+  width:2.3rem;
+}
+#account .consume .mid .count .price{
+  font-size: 0.3rem;
+  color:#333;
+  margin-right:0.4rem;
+}
+#account .consume .mid .count .num{
+  font-size: 0.3rem;
+  color:#999;
+  margin-right:0.4rem;
+}
+#account .consume .sum{
+  padding:0 0.4rem;
+  font-size:0.4rem;
+  line-height: 1rem;
+  height: 1rem;
+  border-bottom: 1px solid #dcdada;
+}
+#account .consume .operate .btn{
+  font-size: 0.36rem;
+  line-height: 0.8rem;
+  border-radius: 0.4rem;
+  padding:0 0.3rem;
+  margin-left:0.3rem;
+  color:#535353;
+  border-color:#cecece;
+}
+#account .consume .operate .btn.done{
+  color:#a28754;
+  border-color:#a28754;
+}
+
+#account .transfer .month{
+  background-color:#ebebeb;
+  padding:0.3rem 0.5rem;
+}
+#account .transfer .month h4{
+  margin:0;
+  font-size: 0.5rem;
+  line-height: 0.6rem;
+  font-weight: bold;
+}
+#account .transfer .month>span{
+  font-size:0.34rem;
+  color:#999;
+}
+#account .transfer .details,
+#account .redPacket .details{
+  padding:0 0.5rem;
+}
+#account .transfer .details .table,
+#account .redPacket .details .table{
+  border-bottom: 1px solid #ccc;
+  padding:0.5rem 0 0.1rem;
+}
+#account .transfer .details .d-row,
+#account .redPacket .details .d-row{
+  display: table-row;
+}
+#account .transfer .details .key,
+#account .redPacket .details .key{
+  vertical-align: middle;
+}
+#account .transfer .details .key h5,
+#account .redPacket .details .key h5{
+  color:#333;
+  font-size: 0.46rem;
+  line-height: 0.8rem;
+}
+#account .transfer .details .key p,
+#account .redPacket .details .key p{
+  font-size: 0.26rem;
+  line-height: 0.6rem;
+  color:#999;
+}
+#account .transfer .details .value,
+#account .redPacket .details .value{
+  vertical-align: middle;
+  font-size: 0.4rem;
+}
+#account .transfer .details .value.out,
+#account .redPacket .details .value.out{
+  color:#000;
+}
+#account .transfer .details .value.in{
+  color:#e7b963;
+}
+#account .redPacket .details .value.in{
+  color:#d30000;
+}
+
+
 
 /* END account */
 
