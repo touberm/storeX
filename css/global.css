@@ -62,6 +62,254 @@ body{
   height:0;
 }
 /* END common */
+
+/* bindPhone */
+#bindP{
+  background-color: #ebebeb;
+  padding-top:1.3rem;
+  padding-bottom: 1.7rem;
+}
+#bindP .title-bar{
+  background-color: #df4d4d;
+}
+#bindP .title-bar .titleBar-btn{
+  background-image: url(../images/back_w.png);
+}
+#bindP .title-bar h1{
+  color:#fff;
+}
+#bindP .bind h2{
+  font-weight: normal;
+  font-size: 0.54rem;
+  color:#666;
+  text-align: center;
+  line-height: 1.4rem;
+  padding:0.3rem 0 0;
+}
+#bindP .bind .mui-icon.mui-icon-eye{
+  display: none;
+}
+#bindP .bind form{
+  margin:0 0.6rem;
+  padding:0 0.6rem;
+  border-radius: 8px;
+  border:none;
+}
+#bindP .bind form .mui-input-row,
+#bindP .bind form .mui-input-row input{
+  padding:0;
+  height:1.3rem;
+  font-size: 0.5rem;
+  line-height: 1.3rem;
+}
+#bindP .bind .mui-input-group .mui-input-row:after{
+  left:0;
+}
+#bindP .bind .getVerify{
+  position: absolute;
+  top:0.2rem;
+  right:0;
+  width:auto;
+  font-size: 0.48rem;
+  line-height: 0.9rem;
+  height:0.9rem;
+  padding:0 0.3rem;
+  color:#df4d4d;
+  border-color:#df4d4d;
+}
+#bindP .bind .countDown{
+  position: absolute;
+  top:0.2rem;
+  right:0;
+  width:auto;
+  font-size: 0.48rem;
+  line-height: 0.9rem;
+  height:0.9rem;
+  padding:0 0.3rem;
+  color:#fff;
+  border:none;
+  background-color: #e1e1e1;
+  
+}
+#bindP .bind .btn-box{
+  margin:0.4rem 0.6rem 0;
+}
+#bindP .bind .bind-btn{
+  width:100%;
+  font-size: 0.46rem;
+  line-height: 1.16rem;
+  padding:0;
+  color:#fff;
+  background-color: #c7c7c7;
+  border:none;
+}
+#bindP .bind .bind-btn.on{
+  background-color:#df4d4d;
+}
+
+#bindP .change img{
+  width:5.07rem;
+  margin:2rem auto 0;
+  display: block;
+}
+#bindP .change p{
+  font-size: 0.46rem;
+  line-height: 1.2rem;
+  text-align: center;
+  padding-bottom: 1.7rem;
+}
+#bindP .change .btn-box{
+  margin:0 0.6rem;
+}
+#bindP .change .btn{
+  border:none;
+  font-size: 0.44rem;
+  line-height: 1.2rem;
+  height: 1.2rem;
+  padding:0;
+  margin:0;
+  color:#fff;
+  background-color:#df4d4d;
+}
+/* END bindPhone */
+/* mAddr */
+#mAddr{
+  background-color: #ebebeb;
+  padding-top:1.3rem;
+  padding-bottom: 1.7rem;
+}
+#mAddr .title-bar{
+  background-color: #df4d4d;
+}
+#mAddr .title-bar .titleBar-btn{
+  background-image: url(../images/back_w.png);
+}
+#mAddr .title-bar h1{
+  color:#fff;
+}
+#mAddr .list li{
+  border-bottom:0.3rem solid #ebebeb;
+  padding:0.5rem 0 0;
+}
+#mAddr .list .operate{
+  border-top:1px solid #e1e1e1;
+}
+#mAddr .list .info{
+  padding:0 0.4rem;
+  font-size: 0.44rem;
+  line-height: 0.7rem;
+}
+#mAddr .list .addr{
+  font-size: 0.34rem;
+  line-height: 0.6rem;
+  padding:0 0.4rem 0.1rem; 
+}
+#mAddr .list .operate{
+  padding:0.3rem 0.4rem; 
+  font-size: 0.32rem;
+  line-height: 0.36rem;
+}
+#mAddr .list .default{
+  padding-left:0.46rem;
+  background-image: url(../images/personal/default.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto 100%;
+}
+#mAddr .list .default.on{
+  background-image: url(../images/personal/default_on.png);
+}
+#mAddr .list .del,
+#mAddr .list .edit,
+#mAddr .mui-icon{
+  font-size:0.32rem;
+  vertical-align: middle;
+  line-height: 0.36rem;
+}
+#mAddr .list .edit{
+  padding-right:0.4rem;
+}
+#mAddr .mui-icon-compose:before,
+#mAddr .mui-icon-trash:before{
+  font-size:0.32rem;
+  vertical-align: middle;
+  line-height: 0.36rem;
+}
+#mAddr .add{
+  position: fixed;
+  border:none;
+  color:#fff;
+  background-color: #df4d4d;
+  font-size: 0.44rem;
+  height:1.2rem;
+  margin:0 5%;
+  padding:0;
+  width:90%;
+  bottom:0.5rem;
+  border-radius: 0.6rem;
+  
+}
+
+/* END mAddr*/
+
+
+/* manage */
+#manage{
+  background-color: #ebebeb;
+  padding-top:1.3rem;
+}
+#manage .title-bar{
+  background-color: #df4d4d;
+}
+#manage .title-bar .titleBar-btn{
+  background-image: url(../images/back_w.png);
+}
+#manage .title-bar h1{
+  color:#fff;
+}
+#manage .user{
+  padding:0.5rem;
+  background-color:#fff;
+  margin-bottom: 0.3rem;
+}
+#manage .user .view{
+  width:1.96rem;
+}
+#manage .user .view img {
+  width:1.96rem;
+}
+#manage .user .info{
+  vertical-align: middle;
+  height:1.96rem;
+}
+#manage .user .info{
+  padding-left:0.3rem;
+}
+#manage .user .info .name{
+  font-size: 0.5rem;
+  line-height: 0.8rem;
+  color:#333;
+  margin:0;
+  padding:0;
+}
+#manage .user .info .code{
+  font-size: 0.34rem;
+  line-break: 0.6rem;
+  margin:0;
+  padding:0;
+  color:#999;
+}
+#manage .list li{
+  border-bottom: 1px solid #ebebeb;
+}
+#manage .list a{
+  font-size: 0.5rem;
+  line-height: 1.4rem;
+}
+
+/* END manage */
+
+
 /* QR_Code */
 #qr_code{
   background-image:url(../images/QRCode_bg.jpg) ;
