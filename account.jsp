@@ -63,7 +63,7 @@
         </div>
 
         <!--消费记录-->
-        <ul class="mui-table-view mui-table consume mui-hidden">
+        <ul class="mui-table-view mui-table consume">
           <li class="mui-table-view-cell unit">
             <div class="top mui-clearfix line">
               <span class="storeName mui-pull-left">手串工坊<span>&nbsp;&gt;</span></span>

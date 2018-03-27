@@ -5,6 +5,9 @@
 body{
   font-family: "microsoft yahei";
 }
+html{
+  width:100%;
+}
 
 /* END layout */
 
@@ -62,7 +65,184 @@ body{
   height:0;
 }
 /* END common */
+/* order */
+.order{
+  width:100%;
+  background-color: #ebebeb;
+}
+.order .title-bar{
+  background-color: #fff;
+}
+.order .nav{
+  border-top:1px solid #a0a0a0;
+  margin-top:1.3rem;
+  background-color:#fff;
+  border-bottom: 1px solid #ebebeb;
+}
+.order .nav .unit{
+  width:20vw;
+}
+.order .nav .unit a{
+  font-size: 14px;
+  line-height: 1.2rem;
+  padding:0 0.1rem;
+  display: inline-block;
+  color:#323232;
+  position: relative;
+}
+.order .nav .unit a .point{
+  display: block;
+  width:6px;
+  height:6px;
+  border-radius: 50%;
+  background-color: #d30000;
+  position: absolute;
+  top:0.2rem;
+  right:0;
+}
+.order .nav .unit a.on{
+  color:#d30000;
+}
+.order .nav .unit a .bottom{
+  position: absolute;
+  bottom:0;
+  left:0;
+  height:2px;
+  width:100%;
+  background-color: #fff;
+}
+.order .nav .unit a.on .bottom{
+  background-color: #d30000;
+}
+.order .default .unit{
+  padding:0;
+  border-bottom: 0.3rem solid #ebebeb;
+}
+.order .default .unit .line{
+  padding:0.3rem 0.4rem;
+}
+.order .default .top .choice{
+  display: inline-block;
+  width:0.4rem;
+  height:0.4rem;
+  border: 1px solid #999;
+  padding:0;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 0.2rem;
+}
+.order .default .top .storeName{
+  font-size: 14px;
+  line-height: 0.4rem;
+  padding-left:0.6rem;
+  background:url(../images/account/icon_bag.png) no-repeat left center;
+  background-size: auto 100%;
+  height:0.4rem;
+  color:#333;
+}
+.order .default .top .storeName span{
+  color:#d2d2d2;
+}
+.order .default .top .stat{
+  font-size:14px;
+  line-height: 0.4rem;
+  color:#d30000;
+}
+.order .default .mid{
+  background-color: #f3f3f3;
+}
+.order .default .mid .table-row{
+  display: table-row;
+}
+.order .default .mid .view{
+  width:3.1rem;
+  vertical-align: middle;
+}
+.order .default .mid .view img{
+  margin:0.4rem;
+  width:2.3rem;
+  vertical-align: middle;
+}
+.order .default .mid .trade{
+  vertical-align: middle;
+}
+.order .default .mid .trade .name{
+  font-size:12px;
+  line-height: 0.52rem;
+  font-weight: normal;
+  color:#333;
+}
+.order .default .mid .trade .style{
+  font-size: 12px;
+  color:#ccc;
+}
+.order .default .mid .count{
+  vertical-align: middle;
+  text-align: right;
+  width:2.3rem;
+}
+.order .default .mid .count .price{
+  font-size: 14px;
+  color:#333;
+  margin-right:0.4rem;
+}
+.order .default .mid .count .num{
+  font-size: 12px;
+  color:#999;
+  margin-right:0.4rem;
+}
+.order .default .sum{
+  padding:0 0.4rem;
+  font-size:14px;
+  line-height: 1rem;
+  height: 1rem;
+  border-bottom: 1px solid #dcdada;
+}
+.order .default .operate .btn{
+  font-size: 12px;
+  line-height: 0.8rem;
+  border-radius: 0.4rem;
+  padding:0 0.3rem;
+  margin-left:0.3rem;
+  color:#535353;
+  border-color:#cecece;
+}
+.order .default .operate .btn.relax{
+  padding:0 0.6rem;
+}
+.order .default .operate .btn.noborder{
+  border:none;
+}
+.order .default .operate .btn.red{
+  color:#d30000;
+  border-color:#d30000;
+}
+.order .empty{
+}
+.order .empty .row{
+  display: table-row;
+}
+.order .empty .box{
+  padding-top:6rem;
+}
+.order .empty img{
+  display: block;
+  width:3.8rem;
+  margin:0 auto;
+  height: 3.8rem;
+}
+.order .empty .hint{
+  font-size: 14px;
+  line-height: 1.5rem;
+  color:#604c47;
+}
+
+/* END order */
+
 /* distcount coupon */
+#dc{
+  background-color: #ebebeb;
+}
 #dc .title-bar{
   background-color: #fff;
 }
@@ -82,6 +262,16 @@ body{
   color:#323232;
   position: relative;
 }
+#dc .nav .unit a .point{
+  display: block;
+  width:6px;
+  height:6px;
+  border-radius: 50%;
+  background-color: #d30000;
+  position: absolute;
+  top:0.2rem;
+  right:0;
+}
 #dc .nav .unit a.on{
   color:#d30000;
 }
@@ -96,58 +286,60 @@ body{
 #dc .nav .unit a.on .bottom{
   background-color: #d30000;
 }
-#dc .unused{
+#dc .default{
   padding:0 0.4rem;
 }
-#dc .unused .list{
+#dc .default .list{
   background-color: #ebebeb;
 }
-#dc .unused .unit{
+#dc .default .unit{
   padding-top:0.65rem;
 }
 
-#dc .unused .ticket,
-#dc .unused .info,
-#dc .unused .use{
+#dc .default .ticket,
+#dc .default .info,
+#dc .default .use{
   background-color:#fff;
   vertical-align: middle;
 }
-#dc .unused .ticket{
+#dc .default .ticket{
   width:2.76rem;
   position: relative;
   border-right: 1px dashed #c6c5c5;
   height:2.25rem;
 }
-#dc .unused .ticket img{
+#dc .default .ticket img{
   position: absolute;
   width:2.76rem;
   height:0.23rem;
   top:-0.23rem;
   left:0;
 }
-#dc .unused .ticket p{
+#dc .default .ticket p{
   padding:0;
   font-size: 0.32rem;
   letter-spacing: 0.1rem;
   color:#d30000;
 }
-#dc .unused .ticket .price{
+#dc .default .ticket .price{
   font-size: 0.6rem;
   line-height: 0.8rem;
   font-weight: bold;
 }
-#dc .unused .info .name{
+#dc .default .info .name{
   font-size: 0.44rem;
   padding-left:0.67rem;
+  color:#333;
 }
-#dc .unused .info .indate{
+#dc .default .info .indate{
   font-size:0.3rem;
   padding-left:0.67rem;
+  color:#999;
 }
-#dc .unused .use{
+#dc .default .use{
   width:3.5rem;
 }
-#dc .unused .use button.toUse{
+#dc .default .use button.toUse{
   font-size: 0.34rem;
   color:#fff;
   height:0.7rem;
@@ -159,10 +351,27 @@ body{
   display: inline-block;
   border-radius: 0.35rem;
 }
-#dc .unused .nomore{
+#dc .default .nomore{
   font-size: 0.4rem;
   text-align: center;
   color:#d5d5d5;
+}
+
+#dc .default.will .unit{
+  padding-top:0.3rem;
+}
+#dc .will .time{
+  font-size: 14px;
+  line-height: 0.86rem;
+  height:0.86rem;
+  color:#df924d;
+  padding: 0 0 0 0.4rem ;
+}
+#dc .default.expire .ticket p{
+  color:#999;
+}
+#dc .default.expire .use button.toUse{
+  background-color: #333;
 }
 
 /* END discount coupon */
@@ -1155,6 +1364,15 @@ body{
 	background-color:#ffcf17;
 	color:#6a3d16;
 }
+/* todo  */
+#level .mui-popover .mui-popover-arrow:after{
+  display: none;
+}
+#level .rights{
+  background-color:#fffdf5;
+  margin:0 1.5rem;
+  height: 1.5rem;
+}
 
 /* END level */
 
@@ -1163,11 +1381,13 @@ body{
 #record{
   background-color: #f4e8ba;
 }
-
+#record .title-bar{
+  background-color: #f4e8ba;
+}
 #record .main{
   position: relative;
   background-color: #fffdf5;
-  margin-top:1.3rem;
+  margin-top:1.8rem;
   margin-left: 0.8rem;
   margin-right: 0.8rem;;
   border-radius: 30px;
@@ -1185,6 +1405,7 @@ body{
   height:1.43rem;
   text-align: center;
   left:-0.33rem;
+  top:0.7rem;
 }
 
 #record .mui-table-view:before, 
@@ -1194,7 +1415,7 @@ body{
 }
 
 #record .table{
-  padding-top:0.5rem;
+  padding-top:1.2rem;
   padding-bottom: 30px;
 }
 #record .unit{
