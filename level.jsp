@@ -17,12 +17,11 @@
         <h1 class="mui-title">等级提升<img src="images/level/badge.png" alt="" style="width: 10px;height: 20px;" /></h1>
       </header>
       <div class="main">
-
         <div class="promote">
           <div class="title mui-clearfix">
             <p class='mui-pull-left'>今日领取经验值:<span>0</span>
               <p>
-                <a onclick="mask.show()"  class='mui-pull-right' >?</a>
+                <a href="#popover"  class='mui-pull-right swPopover' >?</a>
           </div>
           <div class="dirgram mui-clearfix ">
             <div class="line "></div>
@@ -42,7 +41,7 @@
               <img src="images/level/jewel.png " alt=" " />
               <span class='lv4'>LV4</span>
             </div>
-            <div class="unit mui-pull-left ">
+            <div class="unit mui-pull-left " id="showPopover">
               <img src="images/level/jewel.png " alt=" " />
               <span class='lv5'>LV5</span>
             </div>
@@ -126,21 +125,42 @@
         </div>
       </div>
       
-      <div class="mui-backdrop">aaa</div>
 
     </div>
     
-    
+    <div id="popover" class="mui-popover">
+          <ul class="mui-table-view">
+            <li class="mui-table-view-cell"><a href="#">Item1</a>
+            </li>
+            <li class="mui-table-view-cell"><a href="#">Item2</a>
+            </li>
+            <li class="mui-table-view-cell"><a href="#">Item3</a>
+            </li>
+            <li class="mui-table-view-cell"><a href="#">Item4</a>
+            </li>
+            <li class="mui-table-view-cell"><a href="#">Item5</a>
+            </li>
+            <li class="mui-table-view-cell"><a href="#">Item6</a>
+            </li>
+            <li class="mui-table-view-cell"><a href="#">Item7</a>
+            </li>
+            <li class="mui-table-view-cell"><a href="#">Item8</a>
+            </li>
+            <li class="mui-table-view-cell"><a href="#">Item9</a>
+            </li>
+            <li class="mui-table-view-cell"><a href="#">Item10</a>
+            </li>
+          </ul>
+
+    </div>
    
 
     <script src="js/mui.min.js "></script>
     <script type="text/javascript ">
       mui.init();
-      var mask = mui.createMask(function(){
-        
-      });//callback为用户点击蒙版时自动执行的回调；
-      mask.show();//显示遮罩
-      mask.close();//关闭遮罩      
+//    mui('.promote').on('tap','.swPopover',function(){
+//    mui('#popover').popover('show',document.getElementById("showPopover"));
+//      })
     </script>
     <script type="text/javascript ">
       document.documentElement.style.fontSize = (window.innerWidth / 1242 * 100).toFixed(2) + 'px';

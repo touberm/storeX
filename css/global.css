@@ -65,6 +65,40 @@ html{
   height:0;
 }
 /* END common */
+/* details */
+#details{
+	background-color: #ebebeb;
+}
+#details .mui-table-cell{
+	vertical-align: middle;
+}
+#details .title-bar{
+  background-color: #f9f9f9;
+}
+#details .row{
+	display: table-row;
+}
+#details .statu{
+	margin-top:1.3rem;
+	background-color:#ff5300;
+	height:3rem;
+	display: table;
+}
+#details .statu .word{
+	width:8rem;
+	padding-left:1.7rem;
+	height:3rem;
+}
+#details .statu p{
+	font-size: 16px;
+	color:#fff;
+}
+#details .statu img{
+	width:2.2rem;
+}
+
+/* END details */
+
 /* order */
 .order{
   width:100%;
