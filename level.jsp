@@ -21,7 +21,7 @@
           <div class="title mui-clearfix">
             <p class='mui-pull-left'>今日领取经验值:<span>0</span>
               <p>
-                <a href="#popover"  class='mui-pull-right swPopover' >?</a>
+                <a href="javascript:void(0);" onclick="mask.show(showRights())"  class='mui-pull-right swPopover' >?</a>
           </div>
           <div class="dirgram mui-clearfix ">
             <div class="line "></div>
@@ -128,31 +128,51 @@
 
     </div>
     
-    <div id="popover" class="mui-popover">
-          <ul class="mui-table-view">
-            <li class="mui-table-view-cell"><a href="#">Item1</a>
-            </li>
-            <li class="mui-table-view-cell"><a href="#">Item2</a>
-            </li>
-            <li class="mui-table-view-cell"><a href="#">Item3</a>
-            </li>
-            <li class="mui-table-view-cell"><a href="#">Item4</a>
-            </li>
-            <li class="mui-table-view-cell"><a href="#">Item5</a>
-            </li>
-            <li class="mui-table-view-cell"><a href="#">Item6</a>
-            </li>
-            <li class="mui-table-view-cell"><a href="#">Item7</a>
-            </li>
-            <li class="mui-table-view-cell"><a href="#">Item8</a>
-            </li>
-            <li class="mui-table-view-cell"><a href="#">Item9</a>
-            </li>
-            <li class="mui-table-view-cell"><a href="#">Item10</a>
-            </li>
-          </ul>
-
+    <div id="rights" class='mui-hidden'>
+    	<div class="body">
+	      <h4 class="title">会员权益</h4>
+	      <ul class="mui-table-view-cell">
+	      	<li class="mui-table-view-cell">
+	      		<span class="lv">Lv1 :</span>
+	      		 获得XX称号，可购买1份XX产品，商城购买商品<span class='discount'>X折。</span>
+	      	</li>
+	      	<li class="mui-table-view-cell">
+	      		<span class="lv">Lv2 :</span>
+	      		 获得XX称号，可购买1份XX产品，商城购买商品<span class='discount'>X折。</span>
+	      	</li>
+	      	<li class="mui-table-view-cell">
+	      		<span class="lv">Lv3 :</span>
+	      		 获得XX称号，可购买1份XX产品，商城购买商品<span class='discount'>X折。</span>
+	      	</li>
+	      	<li class="mui-table-view-cell">
+	      		<span class="lv">Lv4 :</span>
+	      		 获得XX称号，可购买1份XX产品，商城购买商品<span class='discount'>X折。</span>
+	      	</li>
+	      	<li class="mui-table-view-cell">
+	      		<span class="lv">Lv5 :</span>
+	      		 获得XX称号，可购买1份XX产品，商城购买商品<span class='discount'>X折。</span>
+	      	</li>
+	      	<li class="mui-table-view-cell">
+	      		<span class="lv">Lv6 :</span>
+	      		 获得XX称号，可购买1份XX产品，商城购买商品<span class='discount'>X折。</span>
+	      	</li>
+	      	<li class="mui-table-view-cell">
+	      		<span class="lv">Lv7 :</span>
+	      		 获得XX称号，可购买1份XX产品，商城购买商品<span class='discount'>X折。</span>
+	      	</li>
+	      	<li class="mui-table-view-cell">
+	      		<span class="lv">Lv8 :</span>
+	      		 获得XX称号，可购买1份XX产品，商城购买商品<span class='discount'>X折。</span>
+	      	</li>
+	      	<li class="mui-table-view-cell">
+	      		<span class="lv">Lv9 :</span>
+	      		 获得XX称号，可购买1份XX产品，商城购买商品<span class='discount'>X折。</span>
+	      	</li>
+	      </ul>
+	    </div>
+    	
     </div>
+    
    
 
     <script src="js/mui.min.js "></script>
@@ -161,6 +181,13 @@
 //    mui('.promote').on('tap','.swPopover',function(){
 //    mui('#popover').popover('show',document.getElementById("showPopover"));
 //      })
+			mui('.rights').hide;
+			var mask = mui.createMask(function(){
+				document.getElementById('rights').className = 'mui-hidden';
+			});//callback为用户点击蒙版时自动执行的回调；
+			function showRights(){
+				document.getElementById('rights').className = '';
+			}
     </script>
     <script type="text/javascript ">
       document.documentElement.style.fontSize = (window.innerWidth / 1242 * 100).toFixed(2) + 'px';

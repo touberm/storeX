@@ -65,6 +65,63 @@ html{
   height:0;
 }
 /* END common */
+/* service */
+#service{
+	background-color: #ebebeb;
+}
+#service .title-bar{
+	background-color: #df4d4d;
+}
+#service .title-bar .titleBar-btn{
+  background-image: url(../images/back_w.png);
+}
+#service .title-bar h1{
+  color:#fff;
+}
+#service .list{
+	margin-top:1.3rem;
+}
+#service .in{
+	width:100%;
+	background-color: #fff;
+	padding:0.6rem;
+	position: fixed;
+	bottom: 0;
+	left:0;
+}
+#service .in .input{
+	height:auto;
+}
+#service .in label{
+	min-width:1.24rem;
+	width:10%;
+	vertical-align: middle;
+	display: inline-block;
+	padding:0;
+}
+#service .in label img{
+	width:0.84rem;
+	margin-right:0.4rem;
+}
+#service .in input{
+	vertical-align: middle;
+	font-size: 14px;
+	height:0.84rem;
+	line-height: 0.84rem;
+	padding:0 0.3rem;
+	width:85%;
+	background-color:#ebebeb ;
+	display: inline-block;
+	border:1px solid #e0e0e0;
+	border-radius: 6px;
+	color:#999;
+}
+#service .mui-input-group .mui-input-row:after{
+	height:0;
+}
+/* END service */
+
+
 /* details */
 #details{
 	background-color: #ebebeb;
@@ -96,6 +153,88 @@ html{
 #details .statu img{
 	width:2.2rem;
 }
+#details .trans,
+#details .info{
+	padding:0;
+}
+#details .trans{
+	border-bottom: 1px solid #ccc;
+}
+#details .trans img,
+#details .info img{
+	margin:0 0.3rem;
+	width:0.72rem;
+	height:0.72rem;
+}
+#details .trans .status{
+	font-size: 14px;
+	color:#15760b;
+	padding-top:0.2rem;
+}
+#details .trans .time{
+	font-size: 12px;
+	color:#999;
+	padding-bottom:0.2rem;
+}
+#details .info .user,
+#details .info .addr{
+	font-size: 14px;
+	color:#666;
+	padding:0.2rem 0.4rem 0 0;
+}
+#details .info .addr{
+	padding:0 0.4rem 0.2rem 0;
+}
+#details .order .priceInfo{
+	padding:0.2rem 0.4rem;
+}
+#details .order .priceInfo .type,
+#details .order .priceInfo .scope{
+	font-size: 12px;
+	color:#999;
+}
+#details .order .priceInfo .reality,
+#details .order .priceInfo .price{
+	font-size: 16px;
+	color:#666;
+}
+#details .order .priceInfo .price{
+	color:#eb473f;
+}
+#details .orderInfo{
+	padding:0.4rem;
+	border-top:1px solid #dcdada;
+}
+#details .orderInfo p{
+	padding:0;
+	font-size: 12px;
+	color:#999;
+}
+#details .order .probably{
+	background-color: #ebebeb;
+	padding:0.5rem 0 1.2rem;
+}
+#details .order .probably .title{
+	font-size: 14px;
+	line-height: 0.6rem;
+	padding:0;
+	color:#eb473f;
+}
+#details .order .probably .title img{
+	width:0.6rem;
+	height:0.6rem;
+	vertical-align: middle;
+	margin-left:2px;
+}
+#details .order .probably .title span{
+	display: inline-block;
+	padding: 0 1.2rem;
+	background-image: url(../images/details/bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+}
+
 
 /* END details */
 
@@ -1238,6 +1377,7 @@ html{
 /* level */
 #level{
   background-color: #fff;
+  position: relative;
 }
 #level .title-bar{
   background-color: #fff;
@@ -1399,14 +1539,50 @@ html{
 	color:#6a3d16;
 }
 /* todo  */
-#level .mui-popover .mui-popover-arrow:after{
-  display: none;
+#level #rights{
+  position: absolute;
+  top:1rem;
+  left:0;
+  width:100%;
+  z-index: 999;
 }
-#level .rights{
-  background-color:#fffdf5;
-  margin:0 1.5rem;
-  height: 1.5rem;
+
+#level #rights .body{
+  position: relative;
+  background-color: #fffdf5;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;;
+  border-radius: 30px;
+  min-height: 16rem;
 }
+#level #rights .title{
+  position: relative;
+  background-image: url(../images/record.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width:5.22rem;
+  font-size: 16px;
+  line-height: 1.2rem;
+  padding-bottom: 0.23rem;
+  height:1.43rem;
+  text-align: center;
+  left:-0.33rem;
+  top:0.7rem;
+}
+#level #rights ul li{
+	font-size: 14px;
+	line-height: 0.7rem;
+	padding:0 0 0.2rem 0;
+	margin:0;
+}
+#level #rights ul li .lv{
+	font-size: 16px;
+}
+#level #rights ul li .discount{
+	color:#ff6e17;
+}
+
+
 
 /* END level */
 
