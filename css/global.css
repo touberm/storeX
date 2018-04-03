@@ -65,178 +65,168 @@ html{
   height:0;
 }
 /* END common */
-/* service */
-#service{
+/* shoppingCart */
+#sc{
 	background-color: #ebebeb;
 }
-#service .title-bar{
+#sc .title-bar{
 	background-color: #df4d4d;
 }
-#service .title-bar .titleBar-btn{
+#sc .title-bar .titleBar-btn{
   background-image: url(../images/back_w.png);
 }
-#service .title-bar h1{
+#sc .title-bar h1{
   color:#fff;
 }
-#service .list{
-	margin-top:1.3rem;
+#sc .title-bar a{
+	color:#fff;
+	font-size: 0.52rem;
+  line-height: 1.3rem;
 }
-#service .in{
-	width:100%;
-	background-color: #fff;
-	padding:0.6rem;
-	position: fixed;
-	bottom: 0;
+#sc .main{
+	padding-top:1.3rem;
+	padding-bottom: 1.5rem;
+}
+#sc .head{
+	border-bottom: 1px solid #dcdada;
+}
+#sc .unit{
+	margin-bottom: 0.3rem;
+}
+#sc .unit .storeName{
+  font-size: 14px;
+  line-height: 0.4rem;
+  padding-left:0.6rem;
+  margin: 0.3rem 0;
+  background:url(../images/account/icon_bag.png) no-repeat left center;
+  background-size: auto 100%;
+  height:0.4rem;
+  color:#333;
+}
+#sc .unit .storeName span{
+  color:#d2d2d2;
+}
+#sc .unit .get{
+  font-size:14px;
+  line-height: 0.4rem;
+  color:#333;
+  margin: 0.3rem 0;
+  padding-right: 0.2rem;
+}
+#sc .checkbox{
+	padding-left: 0.2rem;
+	width:1rem;
+	height: 1rem;
+	vertical-align: middle;
+}
+#sc .checkbox input{
 	left:0;
-}
-#service .in .input{
-	height:auto;
-}
-#service .in label{
-	min-width:1.24rem;
-	width:10%;
-	vertical-align: middle;
-	display: inline-block;
 	padding:0;
-}
-#service .in label img{
-	width:0.84rem;
-	margin-right:0.4rem;
-}
-#service .in input{
+	font-size: 18px;
+	height:1rem;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
 	vertical-align: middle;
-	font-size: 14px;
-	height:0.84rem;
-	line-height: 0.84rem;
-	padding:0 0.3rem;
-	width:85%;
-	background-color:#ebebeb ;
-	display: inline-block;
-	border:1px solid #e0e0e0;
-	border-radius: 6px;
-	color:#999;
 }
-#service .mui-input-group .mui-input-row:after{
+#sc .mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{
+	font-size: 18px;
+	line-height: 1rem;
+}
+#sc .mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before{
+	color:#eb473f;
+}
+#sc .mui-input-group .mui-input-row:after{
+	height: 0;
+}
+#sc .mui-input-group:after{
 	height:0;
 }
-/* END service */
-
-
-/* details */
-#details{
-	background-color: #ebebeb;
+#sc .details{
+  width:100%;
+  border-bottom: 1px solid #ebebeb;
 }
-#details .mui-table-cell{
-	vertical-align: middle;
+#sc .details .checkbox{
+	height: auto;
 }
-#details .title-bar{
-  background-color: #f9f9f9;
+#sc .details .checkbox input{
+	height: auto;
 }
-#details .row{
-	display: table-row;
+#sc .details .table-row{
+  display: table-row;
 }
-#details .statu{
-	margin-top:1.3rem;
-	background-color:#ff5300;
-	height:3rem;
-	display: table;
+#sc .details .view{
+  width:3.1rem;
+  vertical-align: middle;
 }
-#details .statu .word{
-	width:8rem;
-	padding-left:1.7rem;
-	height:3rem;
+#sc .details .view img{
+  margin:0.4rem;
+  width:2.3rem;
+  vertical-align: middle;
 }
-#details .statu p{
-	font-size: 16px;
-	color:#fff;
+#sc .details .trade{
+  vertical-align: middle;
 }
-#details .statu img{
-	width:2.2rem;
+#sc .details .trade .nameGroup{
+  
 }
-#details .trans,
-#details .info{
-	padding:0;
+#sc .details .trade .name{
+	width:7rem;
+	font-size:14px;
+  line-height: 0.52rem;
+  font-weight: normal;
+  color:#333;
 }
-#details .trans{
-	border-bottom: 1px solid #ccc;
+#sc .details .trade .edit{
+	width:0.36rem;
+	height: 0.36rem;
+	margin-right: 0.2rem;
 }
-#details .trans img,
-#details .info img{
-	margin:0 0.3rem;
-	width:0.72rem;
-	height:0.72rem;
+#sc .details .trade .edit img{
+	width:0.36rem;
+	height: 0.36rem;
 }
-#details .trans .status{
+#sc .details .trade .style{
+  font-size: 12px;
+  line-height: 0.8rem;
+  color:#999;
+}
+#sc .details .price{
+  font-size: 14px;
+  color:#eb473f;
+  margin-right:0.2rem;
+}
+#sc .details .origin{
 	font-size: 14px;
-	color:#15760b;
-	padding-top:0.2rem;
+  color:#999;
 }
-#details .trans .time{
-	font-size: 12px;
-	color:#999;
-	padding-bottom:0.2rem;
-}
-#details .info .user,
-#details .info .addr{
-	font-size: 14px;
-	color:#666;
-	padding:0.2rem 0.4rem 0 0;
-}
-#details .info .addr{
-	padding:0 0.4rem 0.2rem 0;
-}
-#details .order .priceInfo{
-	padding:0.2rem 0.4rem;
-}
-#details .order .priceInfo .type,
-#details .order .priceInfo .scope{
-	font-size: 12px;
-	color:#999;
-}
-#details .order .priceInfo .reality,
-#details .order .priceInfo .price{
-	font-size: 16px;
-	color:#666;
-}
-#details .order .priceInfo .price{
-	color:#eb473f;
-}
-#details .orderInfo{
-	padding:0.4rem;
-	border-top:1px solid #dcdada;
-}
-#details .orderInfo p{
-	padding:0;
-	font-size: 12px;
-	color:#999;
-}
-#details .order .probably{
-	background-color: #ebebeb;
-	padding:0.5rem 0 1.2rem;
-}
-#details .order .probably .title{
-	font-size: 14px;
-	line-height: 0.6rem;
-	padding:0;
-	color:#eb473f;
-}
-#details .order .probably .title img{
-	width:0.6rem;
-	height:0.6rem;
-	vertical-align: middle;
-	margin-left:2px;
-}
-#details .order .probably .title span{
-	display: inline-block;
-	padding: 0 1.2rem;
-	background-image: url(../images/details/bg.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% auto;
+#sc .details .num{
+  font-size: 14px;
+  color:#999;
+  margin-right:0.2rem;
 }
 
+#sc .footer{
+	height:1.5rem;
+	position: fixed;
+	left:0;
+	bottom:0;
+	width:100%;
+}
+#sc .footer .checkbox{
+	height: 1.5rem;
+}
+#sc .footer .checkbox input{
+	height:1.5rem;
+}
+#sc .footer .mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{
+	line-height: 1.5rem;
+}
 
-/* END details */
+/* END shoppingCart */
+
+
 
 /* order */
 .order{
@@ -411,6 +401,181 @@ html{
 }
 
 /* END order */
+
+
+
+/* service */
+#service{
+	background-color: #ebebeb;
+}
+#service .title-bar{
+	background-color: #df4d4d;
+}
+#service .title-bar .titleBar-btn{
+  background-image: url(../images/back_w.png);
+}
+#service .title-bar h1{
+  color:#fff;
+}
+#service .list{
+	margin-top:1.3rem;
+}
+#service .in{
+	width:100%;
+	background-color: #fff;
+	padding:0.6rem;
+	position: fixed;
+	bottom: 0;
+	left:0;
+}
+#service .in .input{
+	height:auto;
+}
+#service .in label{
+	min-width:1.24rem;
+	width:10%;
+	vertical-align: middle;
+	display: inline-block;
+	padding:0;
+}
+#service .in label img{
+	width:0.84rem;
+	margin-right:0.4rem;
+}
+#service .in input{
+	vertical-align: middle;
+	font-size: 14px;
+	height:0.84rem;
+	line-height: 0.84rem;
+	padding:0 0.3rem;
+	width:85%;
+	background-color:#ebebeb ;
+	display: inline-block;
+	border:1px solid #e0e0e0;
+	border-radius: 6px;
+	color:#999;
+}
+#service .mui-input-group .mui-input-row:after{
+	height:0;
+}
+/* END service */
+
+
+/* details */
+#details{
+	background-color: #ebebeb;
+}
+#details .mui-table-cell{
+	vertical-align: middle;
+}
+#details .title-bar{
+  background-color: #f9f9f9;
+}
+#details .row{
+	display: table-row;
+}
+#details .statu{
+	margin-top:1.3rem;
+	background-color:#ff5300;
+	height:3rem;
+	display: table;
+}
+#details .statu .word{
+	width:8rem;
+	padding-left:1.7rem;
+	height:3rem;
+}
+#details .statu p{
+	font-size: 16px;
+	color:#fff;
+}
+#details .statu img{
+	width:2.2rem;
+}
+#details .trans,
+#details .info{
+	padding:0;
+}
+#details .trans{
+	border-bottom: 1px solid #ccc;
+}
+#details .trans img,
+#details .info img{
+	margin:0 0.3rem;
+	width:0.72rem;
+	height:0.72rem;
+}
+#details .trans .status{
+	font-size: 14px;
+	color:#15760b;
+	padding-top:0.2rem;
+}
+#details .trans .time{
+	font-size: 12px;
+	color:#999;
+	padding-bottom:0.2rem;
+}
+#details .info .user,
+#details .info .addr{
+	font-size: 14px;
+	color:#666;
+	padding:0.2rem 0.4rem 0 0;
+}
+#details .info .addr{
+	padding:0 0.4rem 0.2rem 0;
+}
+#details .order .priceInfo{
+	padding:0.2rem 0.4rem;
+}
+#details .order .priceInfo .type,
+#details .order .priceInfo .scope{
+	font-size: 12px;
+	color:#999;
+}
+#details .order .priceInfo .reality,
+#details .order .priceInfo .price{
+	font-size: 16px;
+	color:#666;
+}
+#details .order .priceInfo .price{
+	color:#eb473f;
+}
+#details .orderInfo{
+	padding:0.4rem;
+	border-top:1px solid #dcdada;
+}
+#details .orderInfo p{
+	padding:0;
+	font-size: 12px;
+	color:#999;
+}
+#details .order .probably{
+	background-color: #ebebeb;
+	padding:0.5rem 0 1.2rem;
+}
+#details .order .probably .title{
+	font-size: 14px;
+	line-height: 0.6rem;
+	padding:0;
+	color:#eb473f;
+}
+#details .order .probably .title img{
+	width:0.6rem;
+	height:0.6rem;
+	vertical-align: middle;
+	margin-left:2px;
+}
+#details .order .probably .title span{
+	display: inline-block;
+	padding: 0 1.2rem;
+	background-image: url(../images/details/bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+}
+
+
+/* END details */
 
 /* distcount coupon */
 #dc{
