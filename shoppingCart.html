@@ -18,6 +18,9 @@
 		</div>
 
 		<div class="main">
+			<div class="manage mui-clearfix">
+				<a href="javascript:void(0);" class="mui-btn mui-pull-right">删除</a>
+			</div>
 			<div class="unit">
 				<form class="mui-input-group">
 					<div class="head mui-clearfix">
@@ -26,6 +29,39 @@
 						</div>
 						<span class="storeName mui-pull-left">手串工坊<span>&nbsp;&gt;</span></span>
 						<span class="get mui-pull-right">领券</span>
+					</div>
+					
+					<div class="details mui-table">
+						<div class='table-row'>
+							<div class="mui-input-row mui-checkbox mui-left checkbox mui-table-cell">
+								<input name="checkbox" value="Item 1" type="checkbox">
+							</div>
+							<div class="view mui-table-cell">
+								<img src="images/account/p1.png" alt="" />
+							</div>
+							<div class="trade mui-table-cell">
+								<h4 class="nameGroup mui-clearfix"><span class="name mui-pull-left">S.W.T/斯华特高密正月星月菩提子佛珠手串 </span><a href="javascript:void(0);" class='mui-pull-right edit'><img src="images/edit.png"/></a></h4>
+								<h5 class="style">款式：2#12*8mm桶珠</h5>
+								<h6 class='mui-clearfix priceGroup'><span class="price">¥299.00</span><s class="origin">¥599.00</s><span class="num mui-pull-right">×1</span></h6>
+							</div>
+							<div class="modify mui-hidden choice mui-table-cell">
+								<div class="mui-numbox numbox">
+									<button class="mui-btn mui-btn-numbox-minus minus" type="button">-</button><input class="mui-input-numbox num" type="number" /><button class="mui-btn mui-btn-numbox-plus plus" type="button">+</button>
+								</div>
+								<div class="select">
+								 	<p class='attribute'>商品属性</p>
+								 	<ul class="mui-table-view ">
+									    <li class="mui-table-view-cell">属性 1</li>
+									    <li class="mui-table-view-cell">属性 2</li>
+									    <li class="mui-table-view-cell">属性 3</li>
+									</ul>
+				                </div>
+							
+							</div>
+							<div class="modify mui-hidden done mui-table-cell">
+									<a class="mui-btn">完成</a>
+							</div>
+						</div>
 					</div>
 				</form>
 			</div>
@@ -98,22 +134,50 @@
 						<div class="mui-input-row mui-checkbox checkbox mui-left mui-pull-left">
 							<input name="checkbox" value="Item 1" type="checkbox">
 						</div>
-						<span class="storeName mui-pull-left">手串工坊<span>&nbsp;&gt;</span></span>
-						<span class="get mui-pull-right">领券</span>
+						<span class="all mui-pull-left">全选</span>
+						<div class="payGroup mui-pull-right">
+							<span class="total">
+							合计:
+								<span class='payPrice'>
+								¥299.00
+								</span>
+							</span>
+							<a href="javascript:void(0)" class="mui-btn payBtn">结算(1)</a>
+						</div>
 					</div>
 
 				</form>
 			</div>
 
 		</div>
-
+			
+		<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init()
 		</script>
 		<script type="text/javascript">
 			document.documentElement.style.fontSize = (window.innerWidth / 1242 * 100).toFixed(2) + 'px';
+			
+			$('.attribute').on('tap',function(){
+				var that = $(this);
+				var oUl = $(this).parents('.select').find('ul');
+				oUl.slideToggle();
+			})
+			$('.select li').on('tap',function(){
+				var that = $(this);
+				var val = that.html();
+				that.parents('.select').find('.attribute').html(val);
+				that.parents('.select').find('ul').slideToggle();
+			});
+			$('.edit').on('tap',function(){
+				var that = $(this);
+				that.parents('.details').find('.trade').addClass('mui-hidden');
+				that.parents('.details').find('.modify').removeClass('mui-hidden');
+				
+			})
 		</script>
+		
 	</body>
 
 </html>

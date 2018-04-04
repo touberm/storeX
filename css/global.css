@@ -87,6 +87,22 @@ html{
 	padding-top:1.3rem;
 	padding-bottom: 1.5rem;
 }
+#sc .manage{
+	height:1.4rem;
+	background-color: #fff;
+	border-bottom: 1px solid #ebebeb;
+}
+#sc .manage a{
+	height:0.78rem;
+	line-height: 0.78rem;
+	display: inline-block;
+	color:#eb473f;
+	border:1px solid #eb473f;
+	margin:0.31rem 0.36rem;
+	padding:0 0.76rem;
+	border-radius: 10px;
+	
+}
 #sc .head{
 	border-bottom: 1px solid #dcdada;
 }
@@ -146,6 +162,7 @@ html{
 #sc .details{
   width:100%;
   border-bottom: 1px solid #ebebeb;
+  position: relative;
 }
 #sc .details .checkbox{
 	height: auto;
@@ -155,6 +172,7 @@ html{
 }
 #sc .details .table-row{
   display: table-row;
+ 	position: relative;
 }
 #sc .details .view{
   width:3.1rem;
@@ -192,6 +210,91 @@ html{
   line-height: 0.8rem;
   color:#999;
 }
+#sc .modify {
+	vertical-align: middle;
+}
+#sc .choice .numbox{ 
+	height:0.88rem;
+	background-color: #fff;
+	border:none;
+	width:6.2rem;
+	padding:0;
+}
+#sc .choice .numbox .minus,
+#sc .choice .numbox .plus{
+	width:0.9rem;
+	border-radius: 0;
+	background-color: inherit;
+	border: solid 1px #ddd;
+	position: relative;
+	display: inline-block;
+}
+#sc .choice .numbox .num{
+	background-color: inherit;
+	border: solid 1px #ddd!important;
+	width:4rem!important;
+	margin:0 0.2rem;
+	padding:0!important;
+	display: inline-block;
+	
+}
+#sc .select{
+	width:6.2rem;
+	border:1px solid #ddd;
+	height:0.84rem;
+	margin-top:0.24rem;
+	position: relative;
+	padding:0;
+}
+#sc .select p.attribute{
+	padding:0 0 0 0.2rem ;
+	font-size: 14px;
+	color:#999;
+	line-height: 0.84rem;
+	height:0.84rem;
+	padding:0 0.2rem 0;
+	margin:0;
+	position: relative;
+}
+#sc .select p.attribute:before{
+    font-family: Muiicons;
+    position: absolute;
+    top: 0;
+    height:0.84rem;
+		line-height: 0.84rem;
+    right: 0.2rem;
+    content: '\e581';
+    color: rgba(170, 170, 170, .6);
+}
+#sc .select ul{
+	position: absolute;
+	z-index: 999;
+	top:0.84rem;
+	left:0;
+	width:100%;
+	display: none;
+}
+#sc .select ul li{
+	border:1px solid #ddd;
+	font-size: 14px;
+	color:#999;
+	height:0.84rem;
+	padding:0 0 0 0.2rem;
+}
+#sc .modify.done{
+	background-color:#eb693f;
+	width: 1.8rem;
+}
+#sc .modify.done a{
+	display: inline-block;
+	width:100%;
+	border:none;
+	background-color: inherit;
+	color:#fff;
+	font-size: 14px;
+	padding:0;
+	margin:0;
+}
 #sc .details .price{
   font-size: 14px;
   color:#eb473f;
@@ -222,6 +325,33 @@ html{
 }
 #sc .footer .mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before{
 	line-height: 1.5rem;
+}
+#sc .footer .all{
+	font-size: 14px;
+	line-height: 1.5rem;
+	color: #999;
+}
+#sc .mui-input-group:before{
+	height:0;
+}
+#sc .footer .total{
+	font-size: 14px;
+	line-height: 1.5rem;
+	color:#484848;
+}
+#sc .footer .payPrice{
+	color:#ec5851;
+}
+#sc .footer .payBtn{
+	border:none;
+	height:1.5rem;
+	display:inline-block;
+	color:#fff;
+	line-height: 1.5rem;
+	font-size: 14px;
+	background-color: #eb633f;
+	padding:0 0.7rem;
+	
 }
 
 /* END shoppingCart */
